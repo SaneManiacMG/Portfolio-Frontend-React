@@ -1,0 +1,57 @@
+* {
+}
+
+.container {
+	width: 400px;
+	height: fit-content;
+	margin: auto;
+	margin-top: 100px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 1px;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 10px 10px 0 0;
+}
+
+ul .tabs {
+	width: 100%;
+	display: inline-block;
+}
+
+li {
+	list-style: none;
+	float: left;
+	border: 1px solid #ccc;
+	height: 40px;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+li > a {
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+}
+
+.leftTab {
+	border-radius: 10px 0 0 0;
+	margin: auto;
+	width: 50%;
+	display: inline;
+	float: left;
+}
+
+.rightTab {
+	border-radius: 0 10px 0 0;
+	margin: auto;
+	width: 50%;
+	display: inline;
+	float: right;
+}
