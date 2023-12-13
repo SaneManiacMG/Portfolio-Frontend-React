@@ -1,0 +1,130 @@
+* {
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 1px;
+	width: 400px;
+	height: fit-content;
+	margin: auto;
+	margin-top: 100px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	transition: height 0.5s ease-in-out;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 8px 7px 0 0;
+	justify-content: space-between;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	border: 1px solid #ccc;
+	height: 45px;
+	font-size: 23px;
+}
+
+li > a {
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+}
+
+.leftTab {
+	border-radius: 9px 0 0 0;
+	width: 50%;
+	display: inline;
+	float: left;
+}
+
+.rightTab {
+	border-radius: 0 9px 0 0;
+	width: 50%;
+	display: inline;
+	float: right;
+}
+
+.tabContent {
+	margin: 0;
+	padding: 5px;
+	min-height: 50px;
+	border-top: 1px solid red;
+	border: 1px solid #ccc;
+	border-radius: 0 0 9px 9px;
+}
+
+.labelInput {
+	flex-direction: column;
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+
+form > div > input {
+	width: 90%;
+	height: 40px;
+	padding: 8px 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	border-bottom: 1px solid #ccc;
+	transition: transform 0.1s ease-in-out, margin-top 0.5s ease-in-out;
+}
+
+form > div > input:focus {
+	outline: 2px solid #61dafb;
+	margin-top: 2px;
+	transform: scale(1.05);
+	border: none;
+	/* border: 3px solid #61dafb; */
+	box-shadow: 0 0 25px rgba(97, 218, 251, 0.3);
+}
+
+form > div > label {
+	float: left;
+	padding: 5px 0 5px 23px;
+}
+
+.btnCollection {
+	margin: 25px 10px;
+	padding: 0 20px;
+	justify-content: space-between;
+	display: flex;
+	border: #000 solid 1px;
+}
+
+div .btnCollection > input {
+	height: 40px;
+	max-width: 90%;
+	margin: 7px 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+div .checkValues {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 8px 7px 0 0;
+}
+
+.checkValues input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: rgba(0, 246, 0, 0.656);
+	box-shadow: 5px blue;
+}
